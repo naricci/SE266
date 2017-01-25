@@ -13,7 +13,7 @@ function isPostRequest() {
  * 
  * @return Boolean
  */
-function createCorpData($corp, $incorp_dt, $email, $zipcode, $owner, $phone) {
+function createCorpData($corp, $email, $zipcode, $owner, $phone) {
     $result = false;
     
     $db = getDatabase();
@@ -103,12 +103,12 @@ function deleteFromCorps($id) {
  * 
  * @return Boolean
  */
-function updateFromCorps($id, $corp, $incorp_dt, $email, $zipcode, $owner, $phone) {
+function updateCorpsRow($id, $corp, $email, $zipcode, $owner, $phone) {
     $result = false;
     
     $db = getDatabase();
     
-    $stmt = $db->prepare("UPDATE corps SET corp = :corp, incorp_dt = now(), zipcode = :zipcode, owner = :owner, phone = :phone WHERE id = :id");
+    $stmt = $db->prepare("UPDATE corps SET corp = :corp, email = :email, zipcode = :zipcode, owner = :owner, phone = :phone WHERE id = :id");
     
     $binds = array(
         ":id"      => $id,
@@ -122,6 +122,6 @@ function updateFromCorps($id, $corp, $incorp_dt, $email, $zipcode, $owner, $phon
     if ($stmt->execute($binds) && $stmt->rowCount() > 0) {
         $result = true;
     }
-    // Not sure if this is needed yet...
+    
     return $result;  
 }
