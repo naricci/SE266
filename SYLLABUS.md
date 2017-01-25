@@ -46,7 +46,7 @@ The following book is available on Books 24x7
 
 **PHP Quick Scripting Reference** by Mikael Olsson.
 
-Publisher: Apress © 2013 (140 pages).
+Publisher: Apress Â© 2013 (140 pages).
 
 ISBN: 9781430262831
 
@@ -77,15 +77,15 @@ Upon successful completion of this class, students will be able to:
 
 ##Assessment Measures 
 
-A midterm and a comprehensive final examination will be used to assess the student’s ability to list, describe compare, recognize and identify appropriate concepts, tools and procedures described in the course objectives. Scores of 60% or higher for all exams are expected to be achieved.
+A midterm and a comprehensive final examination will be used to assess the studentâ€™s ability to list, describe compare, recognize and identify appropriate concepts, tools and procedures described in the course objectives. Scores of 60% or higher for all exams are expected to be achieved.
 
 Laboratory exercises will be used to reinforce, demonstrate and practice concepts and procedures described in the course objectives. A minimum of 90% of all assigned lab activities are expected to be completed to the satisfaction of the instructor. Scores of 60% or higher for all laboratory exercises are expected to be achieved.
 
-Project assignments will be used to assess the student’s ability to independently design and implement solutions to programming challenges.
+Project assignments will be used to assess the studentâ€™s ability to independently design and implement solutions to programming challenges.
 
 ##Evaluation and Grading Criteria
 
-The final grade will be based on the instructor’s evaluation of how well the student has mastered the course objectives. The evaluation will be based primarily on a composite of the student’s performance on quizzes, homework, labs, and the final exam. Weighting of the major criteria is as follows:
+The final grade will be based on the instructorâ€™s evaluation of how well the student has mastered the course objectives. The evaluation will be based primarily on a composite of the studentâ€™s performance on quizzes, homework, labs, and the final exam. Weighting of the major criteria is as follows:
 
 	+ Assignments ........................................70%
 	+ Lab Participation..................................05%
