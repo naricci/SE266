@@ -1,35 +1,79 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Home</title>
-		<meta charset="UTF-8">
-		
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <head>
+        <meta charset="UTF-8">
+        <title>SE266: Home</title>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	</head>
-	<body>
-		<!-- Fixed/Drop-Down Navigation Bar -->
-		<nav class="nav navbar">
-			<ul>
-				<li>It works</li>
-			</ul>
-		</nav>
-		
-		<!-- Table with Lab Assignments -->
-		<table class="table table-striped>
-		
-		</table>
-		
-		<!-- Sticky Footer -->
-		<footer>
-		
-		</footer>
-	</body>
-
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-default navbar-inverse">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">SE266: Web Development using PHP & MySQL</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav" style="float:right;">
+                        <li><a href="https://github.com/naricci/SE266.git" role="button">GitHub</a></li>
+                        <li><a href="https://linkedin.com/in/nicholasaricci" role="button">LinkedIn</a></li>
+                        <li><a href="SYLLABUS.md" role="button">Syllabus</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br />
+        
+        <!-- Assignments Table -->
+        <div class="container">
+            <table border="1" class="table table-hover table-responsive table-bordered">
+                <thead>
+                    <th></th>
+                    <th>Assignment Name</th>
+                    <th>Instructions</th>
+                    <th>Date Completed</th>
+                    <th>Grade</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="./week1/lab1/lab1.php">Random Grid</a></td>
+                        <td><a href="#">Assignment 1 Instructions</a></td>
+                        <td>1/12/2017</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="./week2/lab2/viewActor.php">C.R.U.D. Part 1</a></td>
+                        <td><a href="#">Assignment 2 Instructions</a></td>
+                        <td>1/19/2017</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a href="./week3/lab3/view-all.php">C.R.U.D. Part 2</a></td>
+                        <td><a href="#">Assignment 3 Instructions</a></td>
+                        <td>1/26/2017</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><a href="week4/lab4/view.php">Working with Multiple Forms</a></td>
+                        <td><a href="#">Assignment 4 Instructions</a></td>
+                        <td>2/07/2017</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><!--/container-->
+        
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
 </html>
