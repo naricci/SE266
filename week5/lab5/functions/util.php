@@ -28,3 +28,17 @@ function getPageContent($url) {
     // return the output of the curl
     return $output;
 }
+
+/**
+ * A method to collect all the links from a html string.
+ * 
+ * @return Array
+ */
+function getLinkMatches($html) {
+    $linkRegex = '/(https?:\/\/[\da-z\.-]+\.[a-z\.]{2,6}[\/\w \.-]+)/';
+                        
+    preg_match_all($linkRegex, $html, $linkMatches);
+    $removeDuplicateLinks = array_unique($linkMatches[0]);
+    
+    return $removeDuplicateLinks;
+}
