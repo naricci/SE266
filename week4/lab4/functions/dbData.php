@@ -25,6 +25,7 @@ function searchCorps($column, $search){
     $binds = array(
         ":search" => $search
     );
+    
     $results = array();
 
     if ($stmt->execute($binds) && $stmt->rowCount() > 0) {
@@ -35,6 +36,18 @@ function searchCorps($column, $search){
 }
 
 
-function orderTest($column, $order) {
+function sortCorps($column, $order) {
+    $db = dbconnect();
     
+    $column = 'id'; // make an array to hold all columns?
+    $order = 'ASC'; // make an array to hold both order types?
+    
+    $stmt = $db->prepare("SELECT * FROM corps ORDER BY $column $order");
+    
+    $results = array();
+    
+    if ($stmt->execute() && $stmt->rowCount() > 0) {
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }
+ 

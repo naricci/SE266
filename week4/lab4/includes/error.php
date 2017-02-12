@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Error!</title>
     </head>
     <body>
         <h1>Sorry there was an issue...</h1>

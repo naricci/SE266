@@ -20,13 +20,16 @@
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <!--<li><a href="./create.php" role="button">Add Company</a></li>-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="http://narportfolio.me" role="button">Home</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <br />
+        
+        <!-- Main Content Container -->
+        <div class="container">
         <?php
 
         include_once './functions/dbconnect.php';
@@ -35,7 +38,10 @@
         $results = getAllCorpsData();
 
         ?>
-        <div class="container">
+        
+        <?php include './includes/form1.php'; ?>
+        <?php include './includes/form2.php'; ?>
+        
             <!-- Corporations Table -->
             <table border="1" class="table table-bordered table-condensed table-responsive">
                 <thead>

@@ -1,6 +1,6 @@
 <form action="#" method="get">
     <fieldset>
-        <legend>Form 2: Search</legend>
+        <legend>Form 2: Search Data</legend>
         <label>Columns</label>
         <select name="columns">
             <option value="id" selected="selected">ID</option>
@@ -16,3 +16,4 @@
         <input type="reset" value="Reset" />
     </fieldset>
 </form>
+<br />

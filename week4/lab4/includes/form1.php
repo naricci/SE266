@@ -1,8 +1,18 @@
-<form action="#" method="get">
+<form action="#" method="post">
     <fieldset>
-        <legend>Form 1: Sort</legend>
+        <legend>Form 1: Sort Data</legend>
+        <label>Sort By: </label>
+        <!-- Logic to control which radio button is selected/checked -->
+        <input type="radio" name="order" value="ASC" 
+            <?php if ($order == 'ASC'): ?>
+               checked="checked" />
+            <?php endif; ?>
+        <input type="radio" name="order" value="DESC"
+            <?php if ($order == 'ASC'): ?>
+                checked="checked" />
+            <?php endif; ?>
         <label>Columns</label>
-        <select name="columns">
+        <select name="column">
             <option value="id" selected="selected">ID</option>
             <option value="corp">Corp</option>
             <option value="incorp_d">Date</option>
@@ -11,12 +21,9 @@
             <option value="owner">Owner</option>
             <option value="phone">Phone</option>
         </select>
-        <label>Sort By: </label>
-        // Logic to control which radio button is selected/checked
-        ASC <input type="radio" name="ascending" value="ASC" checked="checked"/>
-        DESC <input type="radio" name="descending" value="DESC" />
-        <input type="hidden" name="action" value="Sort" />
-        <input type="submit" value="Submit" />
+        <input type="hidden" name="action" value="Submit1" />
+        <input type="submit" value="Submit1" />
         <input type="reset" value="Reset" />
     </fieldset>
 </form>
+<br />
