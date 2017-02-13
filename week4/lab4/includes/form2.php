@@ -11,8 +11,8 @@
             <option value="owner">Owner</option>
             <option value="phone">Phone</option>
         </select>
-        <input name="action" type="hiddn" value="search" placeholder="Search...." />
-        <input type="button" value="Submit" name="submit" /> 
+        <input type="hidden" name="action" placeholder="Search...." />
+        <input type="submit" value="Submit2" /> 
         <input type="reset" value="Reset" />
     </fieldset>
 </form>

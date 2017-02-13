@@ -1,0 +1,39 @@
+ASSIGNMENT 4
+
+Prerequisites, Skip if already completed.
+
+Create a database called PHPClassWinter2017. (You can do both the user and database creation all at the same time in phpmyadmin.)
+In PHP MyAdmin under the PHPClassWnter2017 database click on the SQL tab. There will be a text area where you can copy and paste the SQL for the Corporations SQL. (Located under Pages)  Once pasted you may click go and add the table corps and the data.
+ 
+Assignment
+Create a PHP view page that will display all column data from the corps table. Date Should be displayed in a read friendly format (mm/dd/yyyy).
+
+Create an HTML form that will be used for an include.
+
+This HTML form will be used to collect sorting data.
+The Method used for the form will be GET
+Have a drop down of the possible columns to group by.
+Have a radio button to choose sorting by ascending or descending order. 
+There should be a hidden action input that will pass the value "sort".
+Add a reset button to the form.
+Create another HTML form that will be used for an include.
+
+This HTML form will be used to search data.
+The Method used for the form will be GET
+Have a drop down of the possible columns to search by.
+Have input search box that allows the user to enter a value. 
+There should be a hidden action input that will pass the value "search".
+Add a reset button to the form.
+Include these two forms on the view all page and allow users to be able to filter or sort the data.
+
+Create a function for returning the search data.
+Create another function for returning the sort data.
+Create a function that will return an array of possible columns. Make sure to use this function in both forms.
+Show a message above the results displaying a row count or a no results message if nothing is found.
+Make sure to use these functions in your application. Feel free to create other useful functions to avoid repeating your code.
+Add bootstrap and add CSS styles to your application.
+
+This requirement will be graded as part of your functional grade.
+No JavaScript is needed so make sure to only have .css files.
+Feel free to use the bootstrap CDN support to add the css and theme files.
+Go to http://getbootstrap.com/getting-started/ (Links to an external site.) for more information.
