@@ -5,10 +5,11 @@ function getAllCorpsData(){
            
     $stmt = $db->prepare("SELECT * FROM corps");
 
-     $results = array();
-     if ($stmt->execute() && $stmt->rowCount() > 0) {
-         $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-     }
+    $results = array();
+    
+    if ($stmt->execute() && $stmt->rowCount() > 0) {
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
     return $results;
 }
 
@@ -50,4 +51,27 @@ function sortCorps($column, $order) {
         $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 }
- 
+
+
+function columnSelect() {
+    $db = dbconnect();
+    
+    $stmt = $db->prepare("SELECT $column FROM corps");
+    
+    $binds = array(
+        ":id" => $id,
+        ":corp" => $corp,
+        ":email" => $email,
+        ":zipcode" => $zipcode,
+        ":owner" => $owner,
+        ":phone" => $phone
+    );
+    
+    $results = array();
+    
+    if ($stmt->execute($binds) && $stmt->rowCount() > 0) {
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+    
+    return $results;
+}

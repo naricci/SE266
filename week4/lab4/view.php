@@ -3,10 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Lab 4: View Page</title>
-        
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     </head>
@@ -32,16 +30,31 @@
         <div class="container">
         <?php
 
-        include_once './functions/dbconnect.php';
-        include_once './functions/dbData.php';
-        
-        $results = getAllCorpsData();
+            include_once './functions/dbconnect.php';
+            include_once './functions/dbData.php';
 
+            $results = getAllCorpsData();
+
+            $column = columnSelect();
+
+            $action = filter_input(INPUT_POST, 'action');
+            $search = filter_input(INPUT_POST, 'search');
+
+            if ($action === 'Submit1') {
+                $results = sortCorps($column, $order);
+            }
+            if ($action === 'Submit2') {
+                $results = searchCorps($column, $search);
+            }
+        
         ?>
-        
-        <?php include './includes/form1.php'; ?>
-        <?php include './includes/form2.php'; ?>
-        
+            
+            <p>Showing <?php echo count($results); ?></p>
+            <?php include './includes/form1.php'; ?>
+            <?php include './includes/form2.php'; ?>
+
+            <?php include './includes/show-corps-results.php'; ?>
+            
             <!-- Corporations Table -->
             <table border="1" class="table table-bordered table-condensed table-responsive">
                 <thead>
