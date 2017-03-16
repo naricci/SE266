@@ -6,7 +6,7 @@
  */  
 function dbconnect() {
     $config = array(
-        'DB_DNS' => 'mysql:host=localhost;port=3306;dbname=PHPClassWinter2017',
+        'DB_DNS' => 'mysql:host=localhost;port=3306;dbname=phpclasswinter2017',
         'DB_USER' => 'root',
         'DB_PASSWORD' => ''
     );
@@ -27,4 +27,3 @@ function dbconnect() {
 
     return $db;
 }
-?>
